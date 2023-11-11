@@ -1,0 +1,166 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+% Pakcages
+\documentclass[12pt,a4paper]{report}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{tikz} \usetikzlibrary{shapes,arrows,positioning, arrows.meta}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{subcaption}
+\usepackage{setspace}
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Define custom colors
+\definecolor{ghbggray}{HTML}{F6F8FA}
+\definecolor{ghblue}{HTML}{0366D6}
+\definecolor{ghgreen}{HTML}{22863A}
+\definecolor{ghred}{HTML}{B31D28}
+\definecolor{ghdarkgray}{HTML}{24292E}
+\definecolor{ghorange}{HTML}{D73A49}
+
+% Define code listing settings
+\lstset{
+    backgroundcolor=\color{ghbggray},
+    commentstyle=\color{ghgreen},
+    keywordstyle=\color{ghblue},
+    numberstyle=\tiny\color{ghdarkgray},
+    stringstyle=\color{ghred},
+    basicstyle=\ttfamily\footnotesize\color{ghdarkgray},
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2,
+    identifierstyle=\color{ghorange}
+}
+
+% Define custom page style
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\cftsecfont}{\bfseries}
+\titleformat{\section}[block]{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\setlength{\parindent}{0pt}
+
+% Define line spacing
+\setstretch{1}
+
+%----------------------------------------------------------------------------------------
+%	COVER
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{titlepage}
+
+    \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+    \center
+    \vspace*{1.5cm}
+
+    %----------------------------------------------------------------------------------------
+    %	HEADING SECTIONS
+    %----------------------------------------------------------------------------------------
+
+    \includegraphics[scale=.2]{src/cuhk.png}\\[1cm]
+    \textsc{\large The Chinese University of Hong Kong, Shenzhen}\\[1.5cm]
+
+    %course code
+    \textsc{\Large CSC3185}\\[0.5cm]
+
+    %course name
+    \textsc{\large Introduction to Multimedia Systems}\\[0.5cm]
+
+    %----------------------------------------------------------------------------------------
+    %	TITLE SECTION
+    %----------------------------------------------------------------------------------------
+
+    \HRule \\[0.4cm]
+    { \bfseries Application of 3D Image Recognition in Medical Diagnosis}
+    \HRule \\[1.5cm]
+
+    %----------------------------------------------------------------------------------------
+    %	AUTHOR SECTION
+    %----------------------------------------------------------------------------------------
+
+    \begin{minipage}{0.6\textwidth}
+        \begin{tabular}{l l l}
+            \emph{Group ID:}     & 4                        \\
+            \emph{Group Member:} & Hong Kun     & 120040069 \\
+                                 & Hu Ruilizhen & 122090168 \\
+                                 & Hong Yixi    & 119010101 \\
+        \end{tabular}
+
+    \end{minipage}\\[2cm]
+
+    %----------------------------------------------------------------------------------------
+    %	DATE SECTION
+    %----------------------------------------------------------------------------------------
+
+    % Date
+    {\large \today}\\[2cm]
+    \vfill
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+%	CONTENTS
+%----------------------------------------------------------------------------------------
+
+\tableofcontents
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	HEADER AND FOOTER
+%----------------------------------------------------------------------------------------
+
+\fancypagestyle{mypagestyle}{
+    \fancyhf{}
+    \fancyhead[L]{\small CSC3185 Midterm Report}
+    \fancyhead[R]{\small Group 4}
+    \fancyfoot[C]{\thepage} % Add this line to include page numbers at the center of the footer
+    \renewcommand{\headrulewidth}{1pt}
+}
+
+% Apply custom page style
+\pagestyle{mypagestyle}
+
+%----------------------------------------------------------------------------------------
+%	MAIN BODY
+%----------------------------------------------------------------------------------------
+
+\section{Topic and Understanding}
+
+\qquad In recent years, the application of pattern recognition technology has penetrated into various fields, opening up new possibilities for the development of artificial intelligence.
+One of the most influential and dynamic application areas is in the field of health care. Especially in disease detection and recognition, pattern recognition technology has brought major
+changes, significantly improving the early diagnosis and treatment of diseases.\\
+
+\qquad In the pattern recognition technology, 3D image recognition technology has important value. Through the shape, size, color and other information, based on the image analysis
+and calculation, three-dimensional image recognition can accurately locate the location and size of the disease, and provide accurate basis for doctors' diagnosis and treatment.
+In addition, the technology clearly shows the boundaries of the disease in real time, allowing doctors to assess the extent and spread of the disease and accurately measure the
+effectiveness of treatment.\\
+
+\qquad 3D image recognition technology also has powerful dynamic monitoring function. Regular examination can understand the changes of the disease in real time, so that doctors can adjust
+the treatment plan in time to achieve effective control of the development of the disease. This not only improves medical efficiency and precision, but also brings personalized medical
+services one step closer.\\
+
+\qquad Therefore, in this project, we will deeply explore the application of 3D image recognition in medical diagnosis. It is believed that with the progress of pattern recognition technology,
+there will be more breakthroughs in the field of medical health in the future, and more benefits to human health and life.
+
+\section{Schedule and Task Distribution}
+
+\section{Work Already Done and Further Plan}
+
+\end{document}
